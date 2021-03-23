@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 10px 0px 0px 0px;
+}
+
+header .bandeau {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header .bandeau i {
+  font-size: 25px;
+  color: #353535;
+}
+header .bandeau .logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+header .img-restaurant {
+  width: 100%;
+  height: 200px;
+}
+
+.bloc {
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-bottom: 70px;
+  margin-top: -40px;
+  overflow: overlay;
+}
+.bloc .titre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+.bloc h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: lighter;
+  text-indent: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.bloc .icon-coeur::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 25px;
+  color: #7e7e7e;
+  font-style: initial;
+}
+.bloc button {
+  width: 190px;
+  border-radius: 30px;
+  border: 0;
+  color: white;
+  padding: 15px;
+  background: -webkit-linear-gradient(bottom, #9356DC, #f074da);
+  font-weight: bold;
+  box-shadow: 0px 6px 3px -4px #aaa;
+  margin-top: 50px;
+  font-size: initial;
+}
+
+.bloc__menu {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bloc__menu h2 {
+  padding: 20px 5px 10px 5px;
+  font-size: 19px;
+  color: #353535;
+  font-weight: lighter;
+  position: relative;
+  text-transform: uppercase;
+}
+.bloc__menu h2:before {
+  content: "";
+  position: absolute;
+  width: 14%;
+  bottom: 0px;
+  border-bottom: 3px solid #99E2D0;
+}
+.bloc__menu .menu__info {
+  background-color: white;
+  border-radius: 15px;
+  width: 320px;
+  line-height: 10px;
+  box-shadow: 0px 0px 10px 0px #aaa;
+  padding: 15px;
+  margin: 10px 0px 0px 0px;
+  /* Pour les ... après le texte lors de l'animation
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  */
+}
+.bloc__menu .menu__info h3 {
+  margin-top: 0px;
+}
+.bloc__menu .menu__info span {
+  font-size: 15px;
+  color: #353535;
+}
+.bloc__menu .menu__info .prix {
+  float: right;
+  font-weight: bold;
+  color: #353535;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 1px 25px 10px 25px;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: lighter;
+}
+footer ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+footer ul li {
+  line-height: 27px;
+}
+
+/*# sourceMappingURL=style_menu.css.map */

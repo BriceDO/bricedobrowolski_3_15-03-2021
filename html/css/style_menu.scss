@@ -41,7 +41,7 @@ header{
         object-fit: cover;
 
         @media screen and (min-width: 701px){
-            height: 400px;
+            height: 350px;
 
         }
     }
@@ -85,7 +85,7 @@ header{
         }
 
         @keyframes fill {
-            0% { opacity: 0.1; }
+            0% { opacity: 0.15; }
             25% { opacity: 0.25 }
             50% { opacity: 0.5 }
             75% { opacity: 0.75 }
@@ -133,9 +133,9 @@ header{
         @media screen and (min-width: 701px){
             width: initial;
             border-radius: 10px;
-            height: 120px;
+            height: 110px;
             margin: auto;
-            width: 250px;
+            width: 220px;
             margin-top: 130px;
             font-size: 20px;
 
@@ -183,16 +183,33 @@ header{
         background-color: white;
         border-radius: 15px;
         width: 320px;
-        line-height: 10px;
         box-shadow: 0px 0px 10px 0px #aaa;
         padding: 15px;
         margin: 10px 0px 0px 0px;
+        animation:fadeIn ease 1.6s forwards;
+        opacity: 0;
+        transition: opacity 1.5s linear;
+        
+        &:nth-child(2) { animation-delay: 0.2s }
+        &:nth-child(3) { animation-delay: 0.4s }
+        &:nth-child(4) { animation-delay: 0.6s }
 
-        /* Pour les ... après le texte lors de l'animation
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        */
+        @keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+            }
+
+        .info__details{
+            display: flex;
+            justify-content: space-between;
+
+            .intitule{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-right: 5px;
+            }
+        }
 
         @media screen and (max-width: 374px){
             width: 260px;
@@ -206,6 +223,7 @@ header{
 
         h3{
             margin-top: 0px;
+            margin-bottom: 10px;
         }
 
         .intitule{
@@ -214,7 +232,6 @@ header{
         }
 
         .prix{
-            float: right;
             font-weight: bold;
             color: #353535;
         }

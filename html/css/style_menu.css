@@ -35,7 +35,7 @@ header .img-restaurant {
   height: 200px;
   object-fit: cover;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   header .img-restaurant {
     height: 350px;
   }
@@ -55,7 +55,7 @@ header .img-restaurant {
   justify-content: space-around;
   padding-top: 20px;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   .bloc .titre {
     padding-right: 50px;
     padding-left: 50px;
@@ -105,7 +105,7 @@ header .img-restaurant {
   margin-bottom: 0px;
   margin-top: 0px;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   .bloc h1 {
     margin-left: auto;
     margin-right: auto;
@@ -127,12 +127,11 @@ header .img-restaurant {
 }
 .bloc button:hover {
   background: -webkit-linear-gradient(top, #df4dc4, #ee3acd);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   .bloc button {
     width: initial;
     border-radius: 10px;
@@ -149,7 +148,7 @@ header .img-restaurant {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   .bloc__menu {
     margin-right: 30px;
     margin-left: 30px;
@@ -179,15 +178,51 @@ header .img-restaurant {
   border-radius: 15px;
   width: 320px;
   box-shadow: 0px 0px 2px 1px #aaa;
-  padding: 15px;
   margin: 10px 0px 0px 0px;
   animation: fadeIn ease 1.6s forwards;
   opacity: 0;
   transition: opacity 1.5s linear;
+  display: flex;
+  justify-content: space-between;
 }
 .bloc__menu .menu__info:hover {
-  box-shadow: 0px 0px 4px 2px #99E2D0 inset;
+  box-shadow: 0px 0px 3px 1px #aaa inset;
   cursor: pointer;
+}
+.bloc__menu .menu__info:hover .check {
+  animation: checker 0.6s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.bloc__menu .menu__info:hover .check i {
+  color: white;
+  font-size: 30px;
+  animation: rotation 0.4s linear;
+}
+.bloc__menu .menu__info .check {
+  background: #99E2D0;
+  width: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+@keyframes checker {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .bloc__menu .menu__info:nth-child(2) {
   animation-delay: 0.2s;
@@ -198,6 +233,9 @@ header .img-restaurant {
 .bloc__menu .menu__info:nth-child(4) {
   animation-delay: 0.6s;
 }
+.bloc__menu .menu__info:nth-child(5) {
+  animation-delay: 0.8s;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -207,21 +245,28 @@ header .img-restaurant {
   }
 }
 .bloc__menu .menu__info .info__details {
+  color: #353535;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.bloc__menu .menu__info .info__details .int-prix {
   display: flex;
   justify-content: space-between;
 }
-.bloc__menu .menu__info .info__details .intitule {
-  white-space: nowrap;
+.bloc__menu .menu__info .info__details .int-prix .intitule {
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
-  margin-right: 5px;
+  font-size: 15px;
+  padding-right: 3px;
 }
 @media screen and (max-width: 374px) {
   .bloc__menu .menu__info {
     width: 260px;
   }
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   .bloc__menu .menu__info {
     width: initial;
   }
@@ -229,14 +274,13 @@ header .img-restaurant {
 .bloc__menu .menu__info h3 {
   margin-top: 0px;
   margin-bottom: 10px;
-}
-.bloc__menu .menu__info .intitule {
-  font-size: 15px;
-  color: #353535;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .bloc__menu .menu__info .prix {
   font-weight: bold;
-  color: #353535;
+  right: 0px;
 }
 
 footer {
@@ -252,7 +296,7 @@ footer ul {
   list-style-type: none;
   padding-inline-start: 0px;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 639px) {
   footer ul {
     display: grid;
     grid-template-rows: repeat(2, 30px);

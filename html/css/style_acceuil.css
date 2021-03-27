@@ -301,7 +301,6 @@ footer h3 {
 }
 footer ul {
   list-style-type: none;
-  padding-inline-start: 0px;
 }
 @media screen and (min-width: 1024px) {
   footer ul {

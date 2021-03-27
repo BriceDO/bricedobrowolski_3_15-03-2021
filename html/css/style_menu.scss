@@ -58,9 +58,13 @@ header{
     .titre{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-right: 30px;
+        justify-content: space-around;
         padding-top: 20px;
+
+        @media screen and (min-width: 701px){
+            padding-right: 50px;
+            padding-left: 50px;
+        }
 
         .icon-coeur::before{
             content:"\f004";
@@ -104,16 +108,6 @@ header{
             margin-left: auto;
             margin-right: auto;
         }
-
-    }
-    
-    .icon-coeur::before{
-        content:"\f004";
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
-        font-size: 25px;
-        color: #7e7e7e;
-        font-style: initial;
     }
 
     button{
@@ -130,6 +124,14 @@ header{
         margin-left: 80px;
         margin-right: 80px;
 
+        &:hover{
+            background: -webkit-linear-gradient(top ,#df4dc4, #ee3acd);
+            box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
         @media screen and (min-width: 701px){
             width: initial;
             border-radius: 10px;
@@ -138,12 +140,6 @@ header{
             width: 220px;
             margin-top: 130px;
             font-size: 20px;
-
-            &:hover{
-                background: -webkit-linear-gradient(top, $couleur-primaire, #f074da);
-                box-shadow: 0px 10px 10px -4px #aaa;
-                cursor: pointer;
-            }
         }
     }
 }
@@ -183,12 +179,17 @@ header{
         background-color: white;
         border-radius: 15px;
         width: 320px;
-        box-shadow: 0px 0px 10px 0px #aaa;
+        box-shadow: 0px 0px 2px 1px #aaa;
         padding: 15px;
         margin: 10px 0px 0px 0px;
         animation:fadeIn ease 1.6s forwards;
         opacity: 0;
         transition: opacity 1.5s linear;
+
+        &:hover{
+            box-shadow: -0px 0px 4px 2px $couleur-tertiaire inset;
+            cursor: pointer;
+        }
         
         &:nth-child(2) { animation-delay: 0.2s }
         &:nth-child(3) { animation-delay: 0.4s }
@@ -202,6 +203,7 @@ header{
         .info__details{
             display: flex;
             justify-content: space-between;
+            color: #353535;
 
             .intitule{
                 white-space: nowrap;
@@ -228,12 +230,11 @@ header{
 
         .intitule{
             font-size: 15px;
-            color: #353535;
         }
 
         .prix{
             font-weight: bold;
-            color: #353535;
+
         }
     }
 }

@@ -22,9 +22,12 @@
       content: "";
       width: 70px;
       height: 70px;
-      border: 10px solid $background-gris;
+      border: 10px solid white;
       border-top-color: $couleur-primaire;
       border-bottom-color: $couleur-secondaire;
+      box-shadow: 
+      -0px 0px 4px 2px $couleur-tertiaire, 
+      inset -0px 0px 4px 2px $couleur-tertiaire;
       border-radius: 50%;
       animation: spin 1.5s  ease-in-out infinite;
   }
@@ -129,8 +132,9 @@ header{
             font-size: initial;
 
             &:hover{
-                background: -webkit-linear-gradient(top, $couleur-primaire, #f074da);
-                box-shadow: 0px 10px 10px -4px #aaa;
+                background: -webkit-linear-gradient(top ,#df4dc4, #ee3acd);
+                box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+                transform: scale(1.10);
                 cursor: pointer;
             }
         }

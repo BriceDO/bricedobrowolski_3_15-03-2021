@@ -85,15 +85,12 @@ header{
             background: -webkit-linear-gradient(bottom, $couleur-primaire, #f074da);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: fill 0.5s  forwards;
+            animation: fill 1s  forwards;
         }
 
         @keyframes fill {
-            0% { opacity: 0.15; }
-            25% { opacity: 0.25 }
-            50% { opacity: 0.5 }
-            75% { opacity: 0.75 }
-            100% { opacity: 1 }
+            from {opacity: 0;}
+            to {opacity: 1;}  
         }
     }
 
@@ -123,6 +120,7 @@ header{
         font-size: initial;
         margin-left: 80px;
         margin-right: 80px;
+        outline: none;
 
         &:hover{
             background: -webkit-linear-gradient(top ,#df4dc4, #ee3acd);
@@ -180,9 +178,9 @@ header{
         width: 320px;
         box-shadow: 0px 0px 2px 1px #aaa;
         margin: 10px 0px 0px 0px;
-        animation:fadeIn ease 1.6s forwards;
+        animation:fadeIn ease 2s forwards;
         opacity: 0;
-        transition: opacity 1.5s linear;
+        transition: opacity 2.5s linear;
         display: flex;
         justify-content: space-between;
 
@@ -253,7 +251,11 @@ header{
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     font-size: 15px;
-                    padding-right: 3px;
+                    padding-right: 5px;
+
+                    @media screen and (max-width: 639px){
+                        white-space: inherit;;
+                    }
 
                 }
             }
@@ -275,6 +277,10 @@ header{
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+
+            @media screen and (max-width: 375px){
+                white-space: inherit;;
+            }
         }
 
         .prix{
@@ -297,7 +303,7 @@ footer{
 
      ul{
         list-style-type: none;
-        padding-inline-start: 0px;
+        padding-left: 0px;
 
         @media screen and (min-width: 639px){
             display: grid;

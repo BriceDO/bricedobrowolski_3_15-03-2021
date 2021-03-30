@@ -109,21 +109,21 @@ header img {
 .haut-page .decouverte p {
   color: #7d7d7d;
 }
-.haut-page .decouverte button {
+.haut-page .decouverte .decouverte__button {
   border-radius: 30px;
-  border: 0;
   color: white;
   padding: 15px;
   background: -webkit-linear-gradient(bottom, #9356DC, #f074da);
   font-weight: bold;
   box-shadow: 0px 6px 3px -4px #aaa;
-  margin-top: 10px;
   font-size: initial;
+  display: inline-block;
 }
-.haut-page .decouverte button:hover {
+.haut-page .decouverte .decouverte__button:hover {
   background: -webkit-linear-gradient(top, #df4dc4, #ee3acd);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transform: scale(1.1);
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -269,22 +269,13 @@ header img {
   background: -webkit-linear-gradient(bottom, #9356DC, #f074da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fill 0.5s forwards;
+  animation: fill 1s forwards;
 }
 @keyframes fill {
-  0% {
-    opacity: 0.15;
+  from {
+    opacity: 0;
   }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -301,6 +292,7 @@ footer h3 {
 }
 footer ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 @media screen and (min-width: 1024px) {
   footer ul {

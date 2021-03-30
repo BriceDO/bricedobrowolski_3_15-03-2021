@@ -120,21 +120,21 @@ header{
             color: #7d7d7d;
         }
 
-        button{
+        .decouverte__button{
             border-radius: 30px;
-            border: 0;
             color: white;
             padding: 15px;
             background: -webkit-linear-gradient(bottom, $couleur-primaire, #f074da);
             font-weight: bold;
             box-shadow: 0px 6px 3px -4px #aaa;
-            margin-top: 10px;
             font-size: initial;
+            display: inline-block;
 
             &:hover{
                 background: -webkit-linear-gradient(top ,#df4dc4, #ee3acd);
                 box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
                 transform: scale(1.10);
+                transition: 0.3s ease-in-out;
                 cursor: pointer;
             }
         }
@@ -196,7 +196,6 @@ header{
             @media screen and (min-width: 1024px){
                 position: initial;
             }  
-
         }
 
         &--violet{
@@ -294,15 +293,12 @@ header{
             background: -webkit-linear-gradient(bottom, $couleur-primaire, #f074da);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: fill 0.5s  forwards;
+            animation: fill 1s  forwards;
         }
 
         @keyframes fill {
-            0% { opacity: 0.15; }
-            25% { opacity: 0.25 }
-            50% { opacity: 0.5 }
-            75% { opacity: 0.75 }
-            100% { opacity: 1 }
+            from {opacity: 0;}
+            to {opacity: 1;}  
         }
     }
 }
@@ -323,6 +319,7 @@ footer{
 
      ul{
         list-style-type: none;
+        padding-left: 0px;
 
         @media screen and (min-width: 1024px){
 

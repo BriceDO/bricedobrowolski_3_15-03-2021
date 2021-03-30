@@ -83,6 +83,9 @@ header img {
 .haut-page {
   background-color: #f6f6f6;
 }
+.haut-page h2 {
+  margin-top: 0px;
+}
 .haut-page .search {
   padding: 17px 0px 17px 0px;
   background-color: #eaeaea;
@@ -104,7 +107,7 @@ header img {
 }
 .haut-page .decouverte {
   text-align: center;
-  padding: 20px 20px 40px 20px;
+  padding: 30px 20px 30px 20px;
   font-size: 19px;
 }
 .haut-page .decouverte p {
@@ -124,7 +127,7 @@ header img {
   background: -webkit-linear-gradient(top, #df4dc4, #ee3acd);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transform: scale(1.1);
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease;
   cursor: pointer;
 }
 
@@ -148,7 +151,7 @@ header img {
 @media screen and (min-width: 1024px) {
   .fonctionnement__bloc .fonctionnement__cadre {
     width: 300px;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 .fonctionnement__bloc .fonctionnement__cadre .cadre__icone {
@@ -268,8 +271,11 @@ header img {
   cursor: pointer;
   font-weight: 900;
   background: -webkit-linear-gradient(bottom, #9356DC, #f074da);
+  background: -moz-linear-gradient(bottom, #9356DC, #f074da);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   animation: fill 1s forwards;
 }
 @keyframes fill {

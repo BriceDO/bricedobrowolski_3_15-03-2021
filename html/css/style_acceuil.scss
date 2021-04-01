@@ -309,13 +309,10 @@ header{
             background: -moz-linear-gradient(bottom, $couleur-primaire, #f074da);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: fill 1s  forwards;
+            animation: fill 1s  ease;
         }
 
-        @keyframes fill {
-            from {opacity: 0;}
-            to {opacity: 1;}  
-        }
+        @keyframes fill { from {opacity: 0;} to {opacity: 1;} }
     }
 }
 

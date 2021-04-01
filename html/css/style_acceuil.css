@@ -283,7 +283,7 @@ header img {
   background: -moz-linear-gradient(bottom, #9356DC, #f074da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fill 1s forwards;
+  animation: fill 1s ease;
 }
 @keyframes fill {
   from {

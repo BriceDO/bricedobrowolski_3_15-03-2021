@@ -83,7 +83,7 @@ header img {
 .haut-page {
   background-color: #f6f6f6;
 }
-.haut-page h2 {
+.haut-page h1 {
   margin-top: 0px;
 }
 .haut-page .search {
@@ -147,6 +147,11 @@ header img {
   font-weight: bold;
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .fonctionnement__bloc .fonctionnement__cadre {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement__bloc .fonctionnement__cadre {

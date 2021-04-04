@@ -260,7 +260,7 @@ header{
                     text-overflow: ellipsis;
                     padding-right: 5px;
 
-                    @media screen and (max-width: 640px){white-space: inherit;}
+                    @media screen and (max-width: 374px){white-space: inherit;}
                 }
             }
         }
@@ -272,7 +272,7 @@ header{
             white-space: nowrap;
             text-overflow: ellipsis;
 
-            @media screen and (max-width: 640px){white-space: inherit;}
+            @media screen and (max-width: 374px){white-space: inherit;}
         }
 
         .prix{

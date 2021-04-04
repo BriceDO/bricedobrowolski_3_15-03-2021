@@ -279,7 +279,7 @@ header .img-restaurant {
   text-overflow: ellipsis;
   padding-right: 5px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 374px) {
   .bloc__menu .menu__info .info__details .int-prix .intitule {
     white-space: inherit;
   }
@@ -291,7 +291,7 @@ header .img-restaurant {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 374px) {
   .bloc__menu .menu__info h3 {
     white-space: inherit;
   }

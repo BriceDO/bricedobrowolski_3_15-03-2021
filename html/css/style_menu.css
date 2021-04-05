@@ -132,11 +132,16 @@ header .img-restaurant {
 }
 @media screen and (min-width: 639px) {
   .bloc button {
-    width: initial;
     border-radius: 10px;
-    height: 100px;
+    height: 80px;
     margin: auto;
-    width: 200px;
+    width: 190px;
+    margin-top: 70px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bloc button {
     margin-top: 130px;
     font-size: 20px;
   }

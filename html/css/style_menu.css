@@ -194,7 +194,7 @@ header .img-restaurant {
 }
 @media screen and (max-width: 374px) {
   .bloc__menu .menu__info {
-    width: 260px;
+    width: 280px;
   }
 }
 @media screen and (min-width: 639px) {
@@ -281,7 +281,7 @@ header .img-restaurant {
 }
 @media screen and (max-width: 374px) {
   .bloc__menu .menu__info .info__details .int-prix .intitule {
-    white-space: inherit;
+    font-size: 12px;
   }
 }
 .bloc__menu .menu__info h3 {
@@ -293,7 +293,7 @@ header .img-restaurant {
 }
 @media screen and (max-width: 374px) {
   .bloc__menu .menu__info h3 {
-    white-space: inherit;
+    font-size: 15px;
   }
 }
 .bloc__menu .menu__info .prix {

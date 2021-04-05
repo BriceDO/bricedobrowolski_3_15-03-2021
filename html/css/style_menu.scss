@@ -194,7 +194,7 @@ header{
         justify-content: space-between;
         overflow: hidden;
 
-        @media screen and (max-width: 374px){width: 260px;}
+        @media screen and (max-width: 374px){width: 280px;}
         @media screen and (min-width: 639px){width: 100%;}
 
         &:hover{
@@ -260,7 +260,7 @@ header{
                     text-overflow: ellipsis;
                     padding-right: 5px;
 
-                    @media screen and (max-width: 374px){white-space: inherit;}
+                    @media screen and (max-width: 374px){font-size: 12px;}
                 }
             }
         }
@@ -272,7 +272,7 @@ header{
             white-space: nowrap;
             text-overflow: ellipsis;
 
-            @media screen and (max-width: 374px){white-space: inherit;}
+           @media screen and (max-width: 374px){font-size: 15px;}
         }
 
         .prix{

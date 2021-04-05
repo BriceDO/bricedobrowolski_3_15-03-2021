@@ -303,7 +303,6 @@ header .img-restaurant {
 }
 .bloc__menu .menu__info .prix {
   font-weight: bold;
-  align-self: flex-end;
 }
 
 footer {

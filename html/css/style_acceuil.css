@@ -148,6 +148,12 @@ header img {
   display: flex;
   align-items: center;
 }
+.fonctionnement__bloc .fonctionnement__cadre:hover {
+  background-color: #f5edff;
+}
+.fonctionnement__bloc .fonctionnement__cadre:hover .cadre__icone {
+  color: #9356DC;
+}
 @media screen and (min-width: 500px) {
   .fonctionnement__bloc .fonctionnement__cadre {
     justify-content: center;
@@ -176,9 +182,6 @@ header img {
     padding-left: 15px;
   }
 }
-.fonctionnement__bloc .fonctionnement__cadre .cadre__icone--violet {
-  color: #9356DC;
-}
 .fonctionnement__bloc .fonctionnement__cadre .cadre__numero {
   background-color: #9356DC;
   border-radius: 100px;
@@ -191,9 +194,6 @@ header img {
   .fonctionnement__bloc .fonctionnement__cadre .cadre__numero {
     position: initial;
   }
-}
-.fonctionnement__bloc .fonctionnement__cadre--violet {
-  background-color: #f5edff;
 }
 
 /* RESTAURANT */

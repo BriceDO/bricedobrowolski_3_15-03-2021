@@ -165,6 +165,14 @@ header{
         display: flex;
         align-items: center;
 
+        &:hover {
+            background-color: #f5edff;
+        }
+
+        &:hover .cadre__icone {
+            color: $couleur-primaire;
+        }
+
         @media screen and (min-width: 500px){
             justify-content: center;
         }  
@@ -189,10 +197,9 @@ header{
                 padding-left: 15px;
             }  
 
-            &--violet{
-                color: $couleur-primaire;
-            }
         }
+
+        
         
         .cadre__numero{
             background-color: $couleur-primaire;
@@ -207,9 +214,7 @@ header{
             }  
         }
 
-        &--violet{
-            background-color: #f5edff;
-        }
+
     }
 }
 
